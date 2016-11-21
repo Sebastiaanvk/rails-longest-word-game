@@ -1,0 +1,10 @@
+<h1 style="text-align: center;"><%= @random_grid %></h1>
+<h2 style="text-align: center;"><% @start_time%></h2>
+
+<form action="score/" style="text-align: center; margin-top: 100px;">
+  <label for="question">Enter your word</label>
+  <input type="hidden" value="<%= @start_time%>"  name="start">
+  <input type="hidden" value="<%= @random_grid%>" name="grid">
+  <input type="text" id="question" name="query" placeholder="your word">
+  <input type="submit" value="Calculate!">
+</form>
